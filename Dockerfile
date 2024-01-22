@@ -8,5 +8,6 @@ RUN sh -c "$( curl -k -X GET -fsSL --header 'Accept: application/x-sh' 'https://
 
 ENV JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -javaagent:/usr/local/tomcat/seeker/seeker-agent.jar"
 ENV SEEKER_AGENT_APP_OPENAPI_SPEC_URL=http://localhost:8080/swagger/properties.json
+# ENV SEEKER_AGENT_APP_OPENAPI_SPEC_FILE=/usr/local/tomcat/webapps/ROOT/swagger/properties.json
 
 EXPOSE 8080
